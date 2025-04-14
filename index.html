@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>هدوءي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      direction: rtl;
+      font-family: 'Aref Ruqaa', sans-serif;
+      background: linear-gradient(to bottom, #dbeafe, #f3e8ff);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #6d28d9;
+    }
+    .quote {
+      font-size: 1.5rem;
+      margin: 30px 0;
+      background: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+    button {
+      background-color: #a78bfa;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #7c3aed;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .exercise {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 20px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+    .exercise h2 {
+      color: #6d28d9;
+      font-size: 1.8rem;
+    }
+    .exercise p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌿 مرحبًا بك في هدوءي 🌿</h1>
+
+  <div class="quote" id="quoteBox">"كل الأشياء ستمر.. خذ نفسًا واهدأ."</div>
+
+  <br>
+
+  <button onclick="getNewQuote()">🌟 اقتباس جديد</button>
+  <button onclick="toggleSound('rain')">🌧️ صوت المطر</button>
+  <button onclick="toggleSound('birds')">🐦 صوت العصافير</button>
+  <button onclick="toggleSound('wind')">💨 صوت الرياح</button>
+  <button onclick="toggleSound('ocean')">🌊 صوت البحر</button>
+  <button onclick="toggleSound('fire')">🔥 صوت الموقد</button>
+
+  <!-- Exercises Section -->
+  <div class="container">
+    <div class="exercise">
+      <h2>تمرين التنفس العميق</h2>
+      <p>1. اجلس في مكان مريح وأغمض عينيك. <br>
+         2. استنشق الهواء ببطء من خلال الأنف لمدة 4 ثوانٍ. <br>
+         3. احتفظ بالهواء داخل رئتيك لمدة 4 ثوانٍ. <br>
+         4. أخرج الهواء ببطء من فمك لمدة 6 ثوانٍ. <br>
+         5. كرر هذا التمرين 5 مرات.
+      </p>
+    </div>
+
+    <div class="exercise">
+      <h2>تمرين التنفس البطني</h2>
+      <p>1. استلقِ على ظهرك وضع يديك على بطنك. <br>
+         2. تنفس ببطء عبر الأنف بحيث يتمدد بطنك عند استنشاق الهواء. <br>
+         3. أخرج الهواء ببطء من فمك مع شد بطنك قليلاً. <br>
+         4. كرر التمرين لمدة 5-10 دقائق.
+      </p>
+    </div>
+
+    <div class="exercise">
+      <h2>تمرين التنفس 4-7-8</h2>
+      <p>1. استنشق الهواء ببطء عبر الأنف لمدة 4 ثوانٍ. <br>
+         2. احتفظ بالهواء داخل رئتيك لمدة 7 ثوانٍ. <br>
+         3. أخرج الهواء ببطء من فمك لمدة 8 ثوانٍ. <br>
+         4. كرر التمرين 4-6 مرات.
+      </p>
+    </div>
+
+    <div class="exercise">
+      <h2>تمرين الاسترخاء العضلي التدريجي</h2>
+      <p>1. اجلس في مكان هادئ وأغمض عينيك. <br>
+         2. ابدأ بقبض عضلات قدمك ببطء لمدة 5 ثوانٍ ثم استرخِ. <br>
+         3. انتقل إلى عضلات الساق، وشدها لمدة 5 ثوانٍ ثم استرخِ. <br>
+         4. استمر في شد واسترخاء عضلات جسمك من الأسفل إلى الأعلى: الساقين، الفخذين، البطن، الصدر، اليدين، الوجه. <br>
+         5. بمجرد الوصول إلى الرأس، استرخِ بالكامل.
+      </p>
+    </div>
+
+    <div class="exercise">
+      <h2>تمرين التأمل البسيط</h2>
+      <p>1. اجلس في وضع مريح مع رفع ظهرك. <br>
+         2. أغمض عينيك وتنفس ببطء. <br>
+         3. حاول تصفية ذهنك والتركيز على تنفسك. <br>
+         4. عندما تجد نفسك مشوشًا، أعد تركيزك على التنفس.
+      </p>
+    </div>
+  </div>
+
+  <audio id="rainSound" loop>
+    <source src="rain.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="birdsSound" loop>
+    <source src="birds.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="windSound" loop>
+    <source src="wind.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="oceanSound" loop>
+    <source src="ocean.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="fireSound" loop>
+    <source src="fire.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const quotes = [
+      "كل الأشياء ستمر.. خذ نفسًا واهدأ.",
+      "لا بأس أن تستريح قليلاً.",
+      "السلام الداخلي لا يُشترى، بل يُزرع.",
+      "تذكّر، أنت تستحق الراحة والهدوء.",
+      "الأمان يبدأ من الداخل.. من قلبك."
+    ];
+
+    function getNewQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quoteBox").innerText = `"${quotes[randomIndex]}"`;
+    }
+
+    function toggleSound(sound) {
+      const soundElement = document.getElementById(`${sound}Sound`);
+      if (soundElement.paused) {
+        soundElement.play();
+      } else {
+        soundElement.pause();
+      }
+    }
+  </script>
+
+</body>
+</html>
